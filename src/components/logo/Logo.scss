@@ -1,0 +1,12 @@
+// Font Variables
+$roboto-slab: 'Untitled Sans', serif;
+
+//Styles
+@font-face {
+  font-family: 'Untitled Sans';
+  src: url('../../fonts/UntitledSans-Regular.woff2') format('woff2'),
+    url('../../fonts/UntitledSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
