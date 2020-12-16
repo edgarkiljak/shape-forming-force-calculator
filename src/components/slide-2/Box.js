@@ -7,7 +7,7 @@ const Box = (props) => {
   const { label } = props;
   return (
     <div className={`card ${props.isActive && 'active'}`}>
-      <div className="label">{label}</div>
+      <div className="card-label">{label}</div>
       <div className="card-icon">
         <FontAwesomeIcon icon={faChevronDown} />
       </div>

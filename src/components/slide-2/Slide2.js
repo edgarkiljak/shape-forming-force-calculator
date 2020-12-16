@@ -2,6 +2,8 @@ import React from 'react';
 import Logo from '../logo/Logo';
 import Box from './Box';
 import './Slide2.scss';
+import ButtonTransparent from '../buttons/ButtonTransparent';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Slide2 = (props) => {
   const { label } = props;
@@ -53,6 +55,7 @@ const Slide2 = (props) => {
         <Box label={label2} />
       </div>
       <Logo position="bottom" headline="Brand ltda." />
+      <ButtonTransparent label="Swipe left to see more" icon={faArrowRight} />
     </div>
   );
 };
