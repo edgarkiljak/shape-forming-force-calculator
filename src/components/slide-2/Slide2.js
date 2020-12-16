@@ -1,11 +1,21 @@
 import React from 'react';
+import Logo from '../logo/Logo';
 import Box from './Box';
 import './Slide2.scss';
+
 const Slide2 = (props) => {
   const { label } = props;
+  const logoStyle = {
+    fontWeight: 'lighter',
+  };
   const labelStyle = {
     color: 'black',
   };
+  const logoCopy = (
+    <>
+      Diagnostics<span style={logoStyle}>Tools</span>
+    </>
+  );
   const label1 = (
     <>
       <span style={labelStyle}>S</span>pecial
@@ -28,9 +38,10 @@ const Slide2 = (props) => {
   );
   return (
     <div className="slide-2">
+      <Logo position="top" headline={logoCopy} />
       <div className="card-container">
         {' '}
-        <Box className="active" label={label1} />
+        <Box isActive="true" label={label1} />
         <Box label={label2} />
         <Box label={label2} />
         <Box label={label2} />
@@ -41,6 +52,7 @@ const Slide2 = (props) => {
         <Box label={label2} />
         <Box label={label2} />
       </div>
+      <Logo position="bottom" headline="Brand ltda." />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import Slide2 from './components/slide-2/Slide2';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

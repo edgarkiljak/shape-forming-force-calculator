@@ -1,12 +1,25 @@
-// Font Variables
-$roboto-slab: 'Untitled Sans', serif;
-
-//Styles
-@font-face {
+.logo {
+  position: absolute;
+  color: #ffffff;
   font-family: 'Untitled Sans';
-  src: url('../../fonts/UntitledSans-Regular.woff2') format('woff2'),
-    url('../../fonts/UntitledSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  font-weight: bolder;
+}
+
+.headline {
+  font-size: 30px;
+}
+
+.subline {
+  position: relative;
+  font-size: 15px;
+}
+
+.top {
+  top: 20px;
+  right: 10px;
+}
+
+.bottom {
+  bottom: 20px;
+  left: 10px;
 }

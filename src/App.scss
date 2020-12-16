@@ -1,6 +1,9 @@
+$brand-colour: #e52922;
+
 .App {
   text-align: center;
   overflow: hidden;
+  background-color: $brand-colour;
 }
 
 @font-face {
