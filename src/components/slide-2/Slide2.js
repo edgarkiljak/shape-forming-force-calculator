@@ -19,7 +19,6 @@ const Slide2 = (props) => {
     <>
       Lorem
       <br />
-      <br />
       ipsum
       <br />
       dolor sit
