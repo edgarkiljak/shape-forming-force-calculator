@@ -7,6 +7,8 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Slide2 = (props) => {
   const { label } = props;
+
+  // Logos setup
   const logoStyle = {
     fontWeight: 'lighter',
   };
@@ -18,6 +20,8 @@ const Slide2 = (props) => {
       Diagnostics<span style={logoStyle}>Tools</span>
     </>
   );
+
+  // Labels setup
   const label1 = (
     <>
       <span style={labelStyle}>S</span>pecial

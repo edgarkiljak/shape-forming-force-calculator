@@ -1,14 +1,15 @@
+$brand-colour: #e52922;
+
 .button {
   position: absolute;
   color: #ffffff;
-}
-
-.transparent-button {
   bottom: 24px;
   right: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-origin: border-box;
+  cursor: pointer;
 }
 
 .transparent-button-label {
@@ -18,4 +19,17 @@
 .transparent-button-icon {
   font-size: 20px;
   margin-left: 10px;
+}
+
+.white-button {
+  background-color: #ffffff;
+  color: $brand-colour;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.white-button-label {
+  font-size: 14px;
+  margin-right: 10px;
+  font-weight: bolder;
 }

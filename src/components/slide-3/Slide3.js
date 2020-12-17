@@ -2,10 +2,11 @@ import React, { useRef } from 'react';
 import Logo from '../logo/Logo';
 import Slider from './Slider';
 import './Slide3.scss';
-import ButtonTransparent from '../buttons/ButtonTransparent';
+import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Slide3 = (props) => {
+  // Logos setup
   const logoStyle = {
     fontWeight: 'lighter',
   };
@@ -15,6 +16,7 @@ const Slide3 = (props) => {
     </>
   );
 
+  // Deal with range slider left/right colours
   const slider = useRef();
 
   const min = slider.min;
@@ -38,7 +40,12 @@ const Slide3 = (props) => {
 
   return (
     <div className="slide-3">
-      <Logo position="top" headline={logoCopy} />
+      <Logo
+        position="top"
+        headline={logoCopy}
+        subline="Special Shape Forming Force Calculator"
+        xPos={-16}
+      />
       <div className="sliders-container">
         {' '}
         <Slider
@@ -53,6 +60,7 @@ const Slide3 = (props) => {
       </div>
 
       <Logo position="bottom" headline="Brand ltda." />
+      <ButtonWhite label="Next Step" icon={faArrowRight} />
     </div>
   );
 };
