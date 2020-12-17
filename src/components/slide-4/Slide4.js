@@ -30,8 +30,9 @@ const Slide4 = (props) => {
         subline="Special Shape Forming Force Calculator"
         xPos={8}
       />
+      <div className="arc-headline">Tensile Strength</div>
       <div className="arc-container">
-        <Arc label="Tensile Strength" />
+        <Arc />
       </div>
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonWhite label="Next Step" icon={faArrowRight} />

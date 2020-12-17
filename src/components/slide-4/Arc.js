@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Slide4.scss';
 
 const Arc = (props) => {
-  const { label } = props;
   const [value, setValue] = useState(0);
   useEffect(() => {
     let interval;
@@ -17,10 +16,8 @@ const Arc = (props) => {
   }, [value]);
   return (
     <div className="arc">
-      <div className="label">{label}</div>
       <div class="div1">
         <div class="rotater animate"></div>
-
         <div class="div2">
           <div class="inside">
             <div class="innerredcircle"></div>
