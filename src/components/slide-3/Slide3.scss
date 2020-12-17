@@ -1,0 +1,105 @@
+$brand-colour: #e52922;
+$white-colour: #ffffff;
+
+label {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  color: $white-colour;
+  margin-top: 10px;
+}
+
+input {
+  margin-right: 10px;
+}
+
+.slide-3 {
+  background-color: $brand-colour;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.sliders-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider {
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.slider:first-child {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  border-bottom: 1px solid rgba(220, 220, 220, 0.1);
+}
+
+.slider-label {
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: $white-colour;
+}
+
+#thickness-slider,
+#length-slider {
+  width: 600px;
+}
+
+/*Chrome*/
+
+input[type='range'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 600px;
+  height: 15px;
+  padding: 0;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+
+  background-color: rgb(220, 220, 220);
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 100px;
+  /*30x30px adjusted to be same as 28x28px on moz*/
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  background: $white-colour;
+}
+
+/*Mozilla thumb*/
+
+input[type='range']::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -moz-border-radius: 100px;
+  height: 28px;
+  width: 28px;
+  border-radius: 100px;
+  background: #e7e7e7;
+}
+
+/*IE & Edge input*/
+
+input[type='range']::-ms-track {
+  width: 300px;
+  height: 6px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 2px 0;
+  /*remove default tick marks*/
+  color: transparent;
+}
