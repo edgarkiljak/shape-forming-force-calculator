@@ -5,7 +5,7 @@ import '../buttons/Button.scss';
 import Arc from './Arc';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { CircleSlider } from 'react-circle-slider';
+
 const Slide4 = (props) => {
   // Logos setup
   const logoStyle = {
@@ -17,16 +17,6 @@ const Slide4 = (props) => {
     </>
   );
 
-  // const handleChange = (value) => {
-  //   console.log(`Changed value ${value}`);
-  //   this.setState({ value });
-  // };
-
-  // const handleChangeRange = (event) => {
-  //   this.setState({
-  //     value: event.target.valueAsNumber,
-  //   });
-  // };
   return (
     <div
       className="slide-4"
@@ -40,8 +30,9 @@ const Slide4 = (props) => {
         subline="Special Shape Forming Force Calculator"
         xPos={8}
       />
-      <div className="arc-container"> </div>
-      <Arc />
+      <div className="arc-container">
+        <Arc />
+      </div>
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonWhite label="Next Step" icon={faArrowRight} />
     </div>

@@ -10,26 +10,25 @@ $brand-colour: #e52922;
 
 .arc-container {
   position: relative;
-  top: 200px;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-circle {
-  opacity: 0.3;
-}
-
-path {
-  opacity: 0.7;
+.arc {
+  width: 300px;
+  height: 300px;
 }
 
 .div1 {
   position: relative;
   background: red;
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -40%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,23 +49,22 @@ path {
   background: white;
   border-radius: 20px;
   z-index: 999;
-  transform: translate(-210%, 0);
-  // box-shadow: 5px 5px 10px gray;
+  transform: translate(-63%, 0);
 }
 
 .div2 {
   position: absolute;
   background: rgba(220, 220, 220, 0.4);
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
   top: 0%;
   border-radius: 50%;
 }
 
 .div3 {
   position: relative;
-  left: 530px;
-  top: -238px;
+  left: 0;
+  top: -140px;
   z-index: 10;
   width: 550px;
   height: 300px;
@@ -76,18 +74,10 @@ path {
 .innerredcircle {
   position: absolute;
   background: $brand-colour;
-  height: 500px;
-  width: 500px;
-  transform: scale(0.9);
+  height: 300px;
+  width: 300px;
+  transform: scale(0.8);
   border-radius: 50%;
-}
-.topcover {
-  position: absolute;
-
-  height: 250px;
-  width: 500px;
-  top: 0%;
-  border-radius: 250px 250px 0 0;
 }
 
 @keyframes animate {

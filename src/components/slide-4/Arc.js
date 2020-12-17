@@ -10,7 +10,6 @@ const Arc = (props) => {
         <div class="div2">
           <div class="inside">
             <div class="innerredcircle"></div>
-            <div class="topcover"></div>
           </div>
         </div>
       </div>
