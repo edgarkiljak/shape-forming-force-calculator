@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Logo from '../logo/Logo';
 import Slider from './Slider';
 import './Slide3.scss';
@@ -7,6 +7,35 @@ import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Slide3 = (props) => {
+  // Switch toggle active class
+  const [activeIndex, setActiveIndex] = React.useState(0);
+
+  const handleOnClick = (index) => {
+    setActiveIndex(index); // remove the curly braces
+  };
+
+  const toggleButtons = [
+    {
+      label: 'Inch',
+      side: 'left',
+    },
+    {
+      label: 'cm',
+      side: 'right',
+    },
+  ];
+
+  const toggleButton = toggleButtons.map(el, (index) => {
+    return (
+      <ButtonToggle
+        key={index}
+        onClick={handleOnClick(index)}
+        className={activeIndex === index ? 'active' : null}
+        label={el[index].label}
+        side={el[index].side}
+      />
+    );
+  });
   // Logos setup
   const logoStyle = {
     fontWeight: 'lighter',
@@ -59,11 +88,7 @@ const Slide3 = (props) => {
         />
         <Slider name="Length" id="length-slider" min={120} max={150} step={1} />
       </div>
-      <div className="toggle-buttons-container">
-        {' '}
-        <ButtonToggle label="Inch" side="left" />
-        <ButtonToggle label="cm" side="right" isActive="true" />
-      </div>
+      <div className="toggle-buttons-container">{toggleButton}</div>
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonWhite label="Next Step" icon={faArrowRight} />
     </div>
