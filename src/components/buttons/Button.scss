@@ -33,3 +33,33 @@ $brand-colour: #e52922;
   margin-right: 10px;
   font-weight: bolder;
 }
+
+.toggle-button {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: lightgrey;
+  opacity: 0.6;
+}
+
+.toggle-button-label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.active {
+  background-color: lightcoral;
+  opacity: 0.8;
+}
+
+.button.toggle-button.right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.button.toggle-button.left {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}

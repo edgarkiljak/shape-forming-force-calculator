@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import Logo from '../logo/Logo';
 import Slider from './Slider';
 import './Slide3.scss';
+import ButtonToggle from '../buttons/ButtonToggle';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -58,7 +59,11 @@ const Slide3 = (props) => {
         />
         <Slider name="Length" id="length-slider" min={120} max={150} step={1} />
       </div>
-
+      <div className="toggle-buttons-container">
+        {' '}
+        <ButtonToggle label="Inch" side="left" />
+        <ButtonToggle label="cm" side="right" isActive="true" />
+      </div>
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonWhite label="Next Step" icon={faArrowRight} />
     </div>

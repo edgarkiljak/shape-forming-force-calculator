@@ -46,6 +46,16 @@ input {
   font-size: 20px;
   color: $white-colour;
 }
+.toggle-buttons-container {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: row;
+
+  height: 100px;
+  top: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 #thickness-slider,
 #length-slider {
