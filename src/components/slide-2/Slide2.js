@@ -4,10 +4,7 @@ import Box from './Box';
 import './Slide2.scss';
 import ButtonTransparent from '../buttons/ButtonTransparent';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
 const Slide2 = (props) => {
-  const { label } = props;
-
   // Logos setup
   const logoStyle = {
     fontWeight: 'lighter',
@@ -15,12 +12,14 @@ const Slide2 = (props) => {
   const labelStyle = {
     color: 'black',
   };
+  const handleClick = (index) => {
+    props.onChange(index);
+  };
   const logoCopy = (
     <>
       Diagnostics<span style={logoStyle}>Tools</span>
     </>
   );
-
   // Labels setup
   const label1 = (
     <>
@@ -42,26 +41,31 @@ const Slide2 = (props) => {
       amet
     </>
   );
+  const boxes = [
+    { label: label1 },
+    { label: label2 },
+    { label: label2 },
+    { label: label2 },
+    { label: label2 },
+    { label: label2 },
+    { label: label2 },
+  ];
   return (
     <div className="slide-2">
       <Logo position="top" headline={logoCopy} />
       <div className="card-container">
-        {' '}
-        <Box isActive="true" label={label1} />
-        <Box label={label2} />
-        <Box label={label2} />
-        <Box label={label2} />
-        <Box label={label2} />
-        <Box label={label2} />
-        <Box label={label2} />
-        <Box label={label2} />
-        <Box label={label2} />
-        <Box label={label2} />
+        {boxes.map((boxItem, index) => (
+          <Box
+            key={index}
+            isActive={index === props.selectedBoxIndex}
+            label={boxItem.label}
+            onClick={() => handleClick(index)}
+          />
+        ))}
       </div>
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonTransparent label="Swipe left to see more" icon={faArrowRight} />
     </div>
   );
 };
-
 export default Slide2;

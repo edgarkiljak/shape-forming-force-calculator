@@ -1,3 +1,5 @@
+$brand-colour: #e52922;
+
 @font-face {
   font-family: 'Untitled Sans';
   src: url('../src/fonts/UntitledSans-Regular.woff2') format('woff2'),
@@ -6,8 +8,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-$brand-colour: #e52922;
 
 * {
   font-family: 'Untitled Sans';
