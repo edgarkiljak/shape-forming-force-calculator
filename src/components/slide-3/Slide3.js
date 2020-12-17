@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Logo from '../logo/Logo';
 import Slider from './Slider';
 import './Slide3.scss';
@@ -11,6 +11,8 @@ const Slide3 = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleOnClick = (index) => setActiveIndex(index);
+
+  useEffect(() => {}, [activeIndex]);
 
   const toggleButtons = [
     {
