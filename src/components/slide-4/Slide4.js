@@ -31,7 +31,7 @@ const Slide4 = (props) => {
         xPos={8}
       />
       <div className="arc-container">
-        <Arc />
+        <Arc label="Tensile Strength" />
       </div>
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonWhite label="Next Step" icon={faArrowRight} />
