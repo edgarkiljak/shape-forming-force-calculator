@@ -64,6 +64,17 @@ path {
   border-radius: 50%;
 }
 
+.div3 {
+  position: relative;
+  left: 530px;
+  top: -238px;
+  z-index: 10;
+
+  width: 550px;
+  height: 300px;
+  background-color: #e52922;
+}
+
 .innerredcircle {
   position: absolute;
   background: $brand-colour;

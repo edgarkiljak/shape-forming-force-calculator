@@ -14,6 +14,7 @@ const Arc = (props) => {
           </div>
         </div>
       </div>
+      <div class="div3"></div>
     </div>
   );
 };
