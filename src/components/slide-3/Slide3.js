@@ -6,15 +6,11 @@ import '../buttons/Button.scss';
 import ButtonToggle from '../buttons/ButtonToggle';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
 const Slide3 = (props) => {
   // Switch toggle active class
   const [activeIndex, setActiveIndex] = useState(0);
-
   const handleOnClick = (index) => setActiveIndex(index);
-
   useEffect(() => {}, [activeIndex]);
-
   const toggleButtons = [
     {
       label: 'Inch',
@@ -25,9 +21,7 @@ const Slide3 = (props) => {
       side: 'right',
     },
   ];
-
   toggleButtons.map((e) => console.log(e));
-
   const toggleButton = toggleButtons.map((el, index) => {
     return (
       <ButtonToggle
@@ -49,28 +43,27 @@ const Slide3 = (props) => {
       Diagnostics<span style={logoStyle}>Tools</span>
     </>
   );
-
   // Deal with range slider left/right colours
   const slider = useRef();
   const min = slider.min;
   const max = slider.max;
   const value = slider.value;
-
   if (slider.current) {
     // loaded
     slider.current.style.background = `linear-gradient(to right, red 0%, red ${
       ((value - min) / (max - min)) * 100
     }%, #DEE2E6 ${((value - min) / (max - min)) * 100}%, #DEE2E6 100%)`;
-
     slider.current.oninput = function () {
       slider.current.style.background = `linear-gradient(to right, red 0%, red ${
         ((value - min) / (max - min)) * 100
       }%, #DEE2E6 ${((value - min) / (max - min)) * 100}%, #DEE2E6 100%)`;
     };
   }
-
   return (
-    <div className="slide-3">
+    <div
+      className="slide-3"
+      style={{ transform: `translateY(${props.isInView ? '0%' : '100%'})` }}
+    >
       <Logo
         position="top"
         headline={logoCopy}
@@ -95,5 +88,4 @@ const Slide3 = (props) => {
     </div>
   );
 };
-
 export default Slide3;
