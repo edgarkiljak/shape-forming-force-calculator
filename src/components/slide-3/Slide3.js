@@ -32,8 +32,9 @@ const Slide3 = (props) => {
     return (
       <ButtonToggle
         key={index}
+        id={index}
         onClick={() => handleOnClick(index)}
-        isActive={activeIndex === index ? 'active' : ' passive'}
+        isActive={activeIndex === index}
         label={el.label}
         side={el.side}
       />

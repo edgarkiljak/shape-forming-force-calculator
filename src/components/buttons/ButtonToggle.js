@@ -5,6 +5,7 @@ const ButtonToggle = (props) => {
   const { label } = props;
   return (
     <div
+      onClick={props.onClick}
       className={`button toggle-button ${props.side} ${
         props.isActive && 'active'
       }`}
