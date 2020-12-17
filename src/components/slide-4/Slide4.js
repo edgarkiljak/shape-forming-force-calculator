@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Logo from '../logo/Logo';
 import './Slide4.scss';
 import '../buttons/Button.scss';
+import Arc from './Arc';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { CircleSlider } from 'react-circle-slider';
@@ -39,17 +40,8 @@ const Slide4 = (props) => {
         subline="Special Shape Forming Force Calculator"
         xPos={8}
       />
-      <div className="arc-container">
-        {' '}
-        <CircleSlider
-          size={300}
-          progressColor="yellow"
-          value={10}
-          showTooltip="true"
-          tooltipColor="#ffffff"
-        />
-      </div>
-
+      <div className="arc-container"> </div>
+      <Arc />
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonWhite label="Next Step" icon={faArrowRight} />
     </div>
