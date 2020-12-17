@@ -33,8 +33,7 @@ path {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: animate 4s infinite;
-  animation-direction: alternate;
+  animation: animate 4s forwards;
 }
 .rotater {
   position: absolute;
@@ -69,7 +68,6 @@ path {
   left: 530px;
   top: -238px;
   z-index: 10;
-
   width: 550px;
   height: 300px;
   background-color: #e52922;
