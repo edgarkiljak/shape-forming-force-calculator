@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Logo from '../logo/Logo';
 import Slider from './Slider';
 import './Slide3.scss';
+import '../buttons/Button.scss';
 import ButtonToggle from '../buttons/ButtonToggle';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -32,7 +33,7 @@ const Slide3 = (props) => {
       <ButtonToggle
         key={index}
         onClick={() => handleOnClick(index)}
-        className={activeIndex === index ? 'active' : 'passive'}
+        isActive={activeIndex === index ? 'active' : ' passive'}
         label={el.label}
         side={el.side}
       />
@@ -50,7 +51,6 @@ const Slide3 = (props) => {
 
   // Deal with range slider left/right colours
   const slider = useRef();
-
   const min = slider.min;
   const max = slider.max;
   const value = slider.value;
@@ -63,10 +63,8 @@ const Slide3 = (props) => {
 
     slider.current.oninput = function () {
       slider.current.style.background = `linear-gradient(to right, red 0%, red ${
-        ((this.value - this.min) / (this.max - this.min)) * 100
-      }%, #DEE2E6 ${
-        ((this.value - this.min) / (this.max - this.min)) * 100
-      }%, #DEE2E6 100%)`;
+        ((value - min) / (max - min)) * 100
+      }%, #DEE2E6 ${((value - min) / (max - min)) * 100}%, #DEE2E6 100%)`;
     };
   }
 
