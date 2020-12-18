@@ -14,7 +14,6 @@ const Slider = (props) => {
   const slider = createRef();
   const sliderMin = slider.sliderMin;
   const sliderMax = slider.max;
-  const sliderValue = slider.value;
 
   if (slider.current) {
     // loaded

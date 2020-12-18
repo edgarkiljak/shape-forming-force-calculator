@@ -32,24 +32,36 @@ const Slide6 = () => {
     getData();
   }, []);
 
+  console.log(data);
+
   return (
-    <div className="slide-6">
-      <Logo
-        position="top"
-        headline={logoCopy}
-        subline="Special Shape Forming Force Calculator"
-        xPos={8}
-      />
-      <div className="force-container-wrapper">
-        <ForceContainer />
+    data.length > 0 && (
+      <div className="slide-6">
+        <Logo
+          position="top"
+          headline={logoCopy}
+          subline="Special Shape Forming Force Calculator"
+        />
+        <div className="force-container-wrapper">
+          {[...data].map((el, index) => {
+            return (
+              <ForceContainer
+                key={index}
+                // circleIcon={el.icon}
+                topPanelValue={el.force}
+                bottomPannelValue={el.forceTotal}
+                panelDescription={el.Description}
+              />
+            );
+          })}
+        </div>
+        <Logo position="bottom" headline="Brand ltda." />
+        <div className="buttons-container">
+          <ButtonWhite label="Export" icon={faFilePdf} />
+          <ButtonWhite label="Restart" icon={faSync} />
+        </div>
       </div>
-      ;
-      <Logo position="bottom" headline="Brand ltda." />
-      <div className="buttons-container">
-        <ButtonWhite label="Export" icon={faFilePdf} />
-        <ButtonWhite label="Restart" icon={faSync} />
-      </div>
-    </div>
+    )
   );
 };
 

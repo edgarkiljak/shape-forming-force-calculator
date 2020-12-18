@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Logo from '../logo/Logo';
 import './Slide4.scss';
 import '../buttons/Button.scss';
@@ -28,7 +28,6 @@ const Slide4 = (props) => {
         position="top"
         headline={logoCopy}
         subline="Special Shape Forming Force Calculator"
-        xPos={8}
       />
       <div className="arc-headline">Tensile Strength</div>
       <div className="arc-container">

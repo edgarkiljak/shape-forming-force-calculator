@@ -1,37 +1,37 @@
 [
   {
-    "Force": 9.8,
-    "Force Total": 104.8,
+    "force": 9.8,
+    "forceTotal": 104.8,
     "Description": "V-die (bottoming)",
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
   },
   {
-    "Force": 16.3,
-    "Force Total": 174.7,
+    "force": 16.3,
+    "forceTotal": 174.7,
     "Description": "While",
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 249.5q0 0 100 0 15 0 15 20'/></svg>"
   },
   {
-    "Force": 9.8,
-    "Force Total": 104.8,
+    "force": 9.8,
+    "forceTotal": 104.8,
     "Description": "Offset 'Z'",
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
   },
   {
-    "Force": 19.5,
-    "Force Total": 209.6,
+    "force": 19.5,
+    "forceTotal": 209.6,
     "Description": "Material Thickness Offset",
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
   },
   {
-    "Force": 14.6,
-    "Force Total": 157.2,
+    "force": 14.6,
+    "forceTotal": 157.2,
     "Description": "Channel 'U'",
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
   },
   {
-    "Force": 13,
-    "Force Total": 139.8,
+    "force": 13,
+    "forceTotal": 139.8,
     "Description": "V-rib 'V'",
     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
   }

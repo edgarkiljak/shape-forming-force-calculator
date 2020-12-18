@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Logo from '../logo/Logo';
 import './Slide5.scss';
 import '../buttons/Button.scss';
@@ -23,7 +23,6 @@ const Slide5 = (props) => {
         position="top"
         headline={logoCopy}
         subline="Special Shape Forming Force Calculator"
-        xPos={8}
       />
       <div className="analysing-headline">Analysing input, please wait</div>
       <ProgressBar value={10} />

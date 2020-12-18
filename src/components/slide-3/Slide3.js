@@ -21,7 +21,7 @@ const Slide3 = (props) => {
       side: 'right',
     },
   ];
-  toggleButtons.map((e) => console.log(e));
+
   const toggleButton = toggleButtons.map((el, index) => {
     return (
       <ButtonToggle
@@ -53,7 +53,6 @@ const Slide3 = (props) => {
         position="top"
         headline={logoCopy}
         subline="Special Shape Forming Force Calculator"
-        xPos={-16}
       />
       <div className="sliders-container">
         {' '}
