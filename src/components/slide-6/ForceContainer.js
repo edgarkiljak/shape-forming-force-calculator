@@ -19,15 +19,15 @@ const ForceContainer = (props) => {
       </div>
       <div className="panel-container">
         <div className="top-panel">
-          <div className="top-panel-label">Test</div>
-          <div className="top-panel-value">Test</div>
-          <div className="top-panel-unit">Test</div>
+          <div className="top-panel-label">{topPanelLabel}</div>
+          <div className="top-panel-value">{topPanelValue}</div>
+          <div className="top-panel-unit">tpf</div>
         </div>
         <div className="bottom-panel">
-          <div className="bottom-panel-label">Test</div>
-          <div className="bottom-panel-value">Test</div>
-          <div className="bottom-panel-unit">Test</div>
-          <div className="bottom-panel-description">Test Test Test Test</div>
+          <div className="bottom-panel-label">{bottomPanelLabel}</div>
+          <div className="bottom-panel-value">{bottomPannelValue}</div>
+          <div className="bottom-panel-unit">us tons</div>
+          <div className="bottom-panel-description">{panelDescription}</div>
         </div>
       </div>
     </div>
