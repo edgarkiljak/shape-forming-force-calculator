@@ -1,30 +1,34 @@
 import React from 'react';
 import './Slide6.scss';
 
-const ForceContainer = () => {
+const ForceContainer = (props) => {
+  const {
+    circleIcon,
+    topPanelLabel,
+    bottomPanelLabel,
+    topPanelValue,
+    bottomPannelValue,
+    panelDescription,
+  } = props;
   return (
     <div className="force-container">
       <div className="circle-container">
         <div class="inner-circle">
-          <div className="circle-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1123"
-              height="794"
-              stroke="#e52922"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              fill="#fff"
-              fill-rule="evenodd"
-            >
-              <path fill="none" d="M399.5 199.5l100 100 100-100" />
-            </svg>
-          </div>
+          <div className="circle-icon">{circleIcon}</div>
         </div>
       </div>
       <div className="panel-container">
-        <div className="top-panel"></div>
-        <div className="bottom-panel"></div>
+        <div className="top-panel">
+          <div className="top-panel-label">Test</div>
+          <div className="top-panel-value">Test</div>
+          <div className="top-panel-unit">Test</div>
+        </div>
+        <div className="bottom-panel">
+          <div className="bottom-panel-label">Test</div>
+          <div className="bottom-panel-value">Test</div>
+          <div className="bottom-panel-unit">Test</div>
+          <div className="bottom-panel-description">Test Test Test Test</div>
+        </div>
       </div>
     </div>
   );
