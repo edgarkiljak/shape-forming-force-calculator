@@ -1,24 +1,13 @@
-$brand-colour: #e52922;
-$white-colour: #ffffff;
-
 label {
   display: flex;
   align-items: center;
   font-weight: bolder;
-  color: $white-colour;
+  color: #ffffff;
   margin-top: 10px;
 }
 
 input {
   margin-right: 10px;
-}
-
-.slide-3 {
-  background-color: $brand-colour;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s 0.25s ease;
 }
 
 .sliders-container {
@@ -45,7 +34,7 @@ input {
 .slider-label {
   padding-bottom: 20px;
   font-size: 20px;
-  color: $white-colour;
+  color: #ffffff;
 }
 .toggle-buttons-container {
   position: absolute;
@@ -86,7 +75,7 @@ input[type='range']::-webkit-slider-thumb {
   height: 30px;
   width: 30px;
   border-radius: 100px;
-  background: $white-colour;
+  background: #ffffff;
 }
 
 /*Mozilla thumb*/

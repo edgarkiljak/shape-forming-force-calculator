@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../logo/Logo';
 import Box from './Box';
 import './Slide2.scss';
+import SliderContainer from '../SliderContainer';
 import ButtonTransparent from '../buttons/ButtonTransparent';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const Slide2 = (props) => {
@@ -53,7 +54,7 @@ const Slide2 = (props) => {
     { label: label2 },
   ];
   return (
-    <div className="slide-2">
+    <SliderContainer>
       <Logo position="top" headline={logoCopy} />
       <div className="card-container">
         {boxes.map((boxItem, index) => (
@@ -67,7 +68,7 @@ const Slide2 = (props) => {
       </div>
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonTransparent label="Swipe left to see more" icon={faArrowRight} />
-    </div>
+    </SliderContainer>
   );
 };
 export default Slide2;

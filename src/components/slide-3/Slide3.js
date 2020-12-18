@@ -3,6 +3,7 @@ import Logo from '../logo/Logo';
 import Slider from './Slider';
 import './Slide3.scss';
 import '../buttons/Button.scss';
+import SliderContainer from '../SliderContainer';
 import ButtonToggle from '../buttons/ButtonToggle';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -45,10 +46,7 @@ const Slide3 = (props) => {
   );
 
   return (
-    <div
-      className="slide-3"
-      style={{ transform: `translateY(${props.isInView ? '0%' : '100%'})` }}
-    >
+    <SliderContainer>
       <Logo
         position="top"
         headline={logoCopy}
@@ -68,7 +66,7 @@ const Slide3 = (props) => {
       <div className="toggle-buttons-container">{toggleButton}</div>
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonWhite label="Next Step" icon={faArrowRight} />
-    </div>
+    </SliderContainer>
   );
 };
 export default Slide3;

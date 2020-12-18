@@ -1,13 +1,3 @@
-$brand-colour: #e52922;
-
-.slide-4 {
-  background-color: $brand-colour;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s 0.25s ease;
-}
-
 .arc-headline {
   position: absolute;
   top: 100px;
@@ -80,7 +70,7 @@ $brand-colour: #e52922;
 
 .innerredcircle {
   position: absolute;
-  background: $brand-colour;
+  background: #e52922;
   height: 300px;
   width: 300px;
   transform: scale(0.8);

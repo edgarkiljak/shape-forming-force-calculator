@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Slide6.scss';
 import Logo from '../logo/Logo';
 import '../buttons/Button.scss';
+import SliderContainer from '../SliderContainer';
 import ForceContainer from './ForceContainer';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faSync } from '@fortawesome/free-solid-svg-icons';
@@ -40,7 +41,7 @@ const Slide6 = () => {
 
   return (
     data.length > 0 && (
-      <div className="slide-6">
+      <SliderContainer>
         <Logo
           position="top"
           headline={logoCopy}
@@ -69,7 +70,7 @@ const Slide6 = () => {
           />
           <ButtonWhite label="Restart" icon={faSync} />
         </div>
-      </div>
+      </SliderContainer>
     )
   );
 };

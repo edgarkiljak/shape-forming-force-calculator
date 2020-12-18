@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../logo/Logo';
 import './Slide5.scss';
+import SliderContainer from '../SliderContainer';
 import '../buttons/Button.scss';
 import ButtonWhite from '../buttons/ButtonWhite';
 import ProgressBar from './ProgressBar';
@@ -18,7 +19,7 @@ const Slide5 = (props) => {
   );
 
   return (
-    <div className="slide-4">
+    <SliderContainer>
       <Logo
         position="top"
         headline={logoCopy}
@@ -28,7 +29,7 @@ const Slide5 = (props) => {
       <ProgressBar value={10} />
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonWhite label="See Results" icon={faCheck} />
-    </div>
+    </SliderContainer>
   );
 };
 export default Slide5;

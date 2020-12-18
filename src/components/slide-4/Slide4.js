@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../logo/Logo';
 import './Slide4.scss';
 import '../buttons/Button.scss';
+import SliderContainer from '../SliderContainer';
 import Arc from './Arc';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -18,12 +19,7 @@ const Slide4 = (props) => {
   );
 
   return (
-    <div
-      className="slide-4"
-      style={{
-        transform: `translateY(${props.isInView === 2 ? '0%' : '100%'})`,
-      }}
-    >
+    <SliderContainer>
       <Logo
         position="top"
         headline={logoCopy}
@@ -35,7 +31,7 @@ const Slide4 = (props) => {
       </div>
       <Logo position="bottom" headline="Brand ltda." />
       <ButtonWhite label="Next Step" icon={faArrowRight} />
-    </div>
+    </SliderContainer>
   );
 };
 export default Slide4;
