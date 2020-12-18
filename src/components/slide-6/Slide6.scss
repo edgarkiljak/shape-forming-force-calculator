@@ -36,12 +36,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 80%;
   height: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  transform: translate(-40%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .force-container {
@@ -170,10 +170,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .makeStyles-root-1 {
-    width: 55% !important;
-  }
-
   .analysing-headline {
     font-size: 20px;
     text-align: left;
