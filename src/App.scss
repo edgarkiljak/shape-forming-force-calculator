@@ -11,7 +11,14 @@
   font-family: 'Untitled Sans';
 }
 .App {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
   text-align: center;
   overflow: hidden;
-  background-color: #e52922;
+  overflow: hidden;
 }

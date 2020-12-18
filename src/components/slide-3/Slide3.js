@@ -1,17 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Logo from '../logo/Logo';
 import Slider from './Slider';
 import './Slide3.scss';
 import '../buttons/Button.scss';
-import SliderContainer from '../SliderContainer';
+import SliderContainer from '../slide-container';
 import ButtonToggle from '../buttons/ButtonToggle';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 const Slide3 = (props) => {
-  // Switch toggle active class
-  const [activeIndex, setActiveIndex] = useState(0);
-  const handleOnClick = (index) => setActiveIndex(index);
-  useEffect(() => {}, [activeIndex]);
+  const [selectedUnit, setSelectedUnit] = useState(props.selectedUnit);
+  const [thickness, setTickness] = useState(props.thickness);
+  const [length, setLenth] = useState(props.length);
+
+  const handleClick = () => {
+    props.onChange({ thickness, length, selectedUnit });
+  };
+
   const toggleButtons = [
     {
       label: 'Inch',
@@ -23,15 +28,15 @@ const Slide3 = (props) => {
     },
   ];
 
-  const toggleButton = toggleButtons.map((el, index) => {
+  const toggleButton = toggleButtons.map((buttonItem, index) => {
     return (
       <ButtonToggle
         key={index}
         id={index}
-        onClick={() => handleOnClick(index)}
-        isActive={activeIndex === index}
-        label={el.label}
-        side={el.side}
+        onClick={() => setSelectedUnit(buttonItem.label)}
+        isActive={buttonItem.label === selectedUnit}
+        label={buttonItem.label}
+        side={buttonItem.side}
       />
     );
   });
@@ -46,26 +51,37 @@ const Slide3 = (props) => {
   );
 
   return (
-    <SliderContainer>
+    <SliderContainer isInView={props.isInView || props.isStepDone}>
       <Logo
-        position="top"
+        position='top'
         headline={logoCopy}
-        subline="Special Shape Forming Force Calculator"
+        subline='Special Shape Forming Force Calculator'
       />
-      <div className="sliders-container">
-        {' '}
+      <div className='sliders-container'>
         <Slider
-          name="Thickness"
-          id="thickness-slider"
+          name='Thickness'
+          id='thickness-slider'
           min={0.01}
           max={0.1}
           step={0.01}
+          onChange={(value) => setTickness(value)}
         />
-        <Slider name="Length" id="length-slider" min={120} max={150} step={1} />
+        <Slider
+          name='Length'
+          id='length-slider'
+          min={120}
+          max={150}
+          step={1}
+          onChange={(value) => setLenth(value)}
+        />
       </div>
-      <div className="toggle-buttons-container">{toggleButton}</div>
-      <Logo position="bottom" headline="Brand ltda." />
-      <ButtonWhite label="Next Step" icon={faArrowRight} />
+      <div className='toggle-buttons-container'>{toggleButton}</div>
+      <Logo position='bottom' headline='Brand ltda.' />
+      <ButtonWhite
+        label='Next Step'
+        icon={faArrowRight}
+        onClick={handleClick}
+      />
     </SliderContainer>
   );
 };

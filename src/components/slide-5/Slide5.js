@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../logo/Logo';
 import './Slide5.scss';
-import SliderContainer from '../SliderContainer';
+import SliderContainer from '../slide-container';
 import '../buttons/Button.scss';
 import ButtonWhite from '../buttons/ButtonWhite';
 import ProgressBar from './ProgressBar';
@@ -19,16 +19,21 @@ const Slide5 = (props) => {
   );
 
   return (
-    <SliderContainer>
+    <SliderContainer isInView={props.isInView || props.isStepDone}>
       <Logo
-        position="top"
+        position='top'
         headline={logoCopy}
-        subline="Special Shape Forming Force Calculator"
+        subline='Special Shape Forming Force Calculator'
       />
-      <div className="analysing-headline">Analysing input, please wait</div>
-      <ProgressBar value={10} />
-      <Logo position="bottom" headline="Brand ltda." />
-      <ButtonWhite label="See Results" icon={faCheck} />
+      <div className='analysing-headline'>Analysing input, please wait</div>
+      {props.isInView && <ProgressBar />}
+
+      <Logo position='bottom' headline='Brand ltda.' />
+      <ButtonWhite
+        label='See Results'
+        icon={faCheck}
+        onClick={() => props.onChange()}
+      />
     </SliderContainer>
   );
 };

@@ -2,9 +2,10 @@ import React from 'react';
 import Logo from '../logo/Logo';
 import Box from './Box';
 import './Slide2.scss';
-import SliderContainer from '../SliderContainer';
+import SliderContainer from '../slide-container';
 import ButtonTransparent from '../buttons/ButtonTransparent';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 const Slide2 = (props) => {
   // Logos setup
   const logoStyle = {
@@ -54,9 +55,9 @@ const Slide2 = (props) => {
     { label: label2 },
   ];
   return (
-    <SliderContainer>
-      <Logo position="top" headline={logoCopy} />
-      <div className="card-container">
+    <SliderContainer isInView>
+      <Logo position='top' headline={logoCopy} />
+      <div className='card-container'>
         {boxes.map((boxItem, index) => (
           <Box
             key={index}
@@ -66,8 +67,8 @@ const Slide2 = (props) => {
           />
         ))}
       </div>
-      <Logo position="bottom" headline="Brand ltda." />
-      <ButtonTransparent label="Swipe left to see more" icon={faArrowRight} />
+      <Logo position='bottom' headline='Brand ltda.' />
+      <ButtonTransparent label='Swipe left to see more' icon={faArrowRight} />
     </SliderContainer>
   );
 };

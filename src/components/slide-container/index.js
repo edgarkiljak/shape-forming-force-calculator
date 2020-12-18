@@ -1,9 +1,10 @@
 import React from 'react';
-import '../index.scss';
+import './index.scss';
+
 const SliderContainer = ({ children, isInView }) => {
   return (
     <div
-      className="slider-container"
+      className='slider-container'
       style={{
         transform: `translateY(${isInView ? '0%' : '100%'})`,
       }}

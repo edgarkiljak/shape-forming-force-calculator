@@ -10,7 +10,7 @@ const ButtonToggle = (props) => {
         props.isActive && 'active'
       }`}
     >
-      <div className="toggle-button-label">{label}</div>
+      <div className='toggle-button-label'>{label}</div>
     </div>
   );
 };

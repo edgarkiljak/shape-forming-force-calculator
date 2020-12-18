@@ -1,13 +1,12 @@
-import React, { useState, useEffect, createRef } from 'react';
+import React, { useState, createRef } from 'react';
 
 const Slider = (props) => {
   const { name, id, min, max, step } = props;
   const [value, setValue] = useState(0);
 
-  useEffect(() => {}, [value]);
-
   const handleChange = (event) => {
     setValue(event.target.value);
+    props.onChange(event.target.value);
   };
 
   // Deal with range slider left/right colours
@@ -33,11 +32,11 @@ const Slider = (props) => {
   }
 
   return (
-    <div className="slider">
-      <div className="slider-label">{name}</div>
+    <div className='slider'>
+      <div className='slider-label'>{name}</div>
       <input
         id={id}
-        type="range"
+        type='range'
         min={min}
         max={max}
         value={value}

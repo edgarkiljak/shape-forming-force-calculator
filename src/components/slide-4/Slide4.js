@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../logo/Logo';
 import './Slide4.scss';
 import '../buttons/Button.scss';
-import SliderContainer from '../SliderContainer';
+import SliderContainer from '../slide-container';
 import Arc from './Arc';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -19,18 +19,20 @@ const Slide4 = (props) => {
   );
 
   return (
-    <SliderContainer>
+    <SliderContainer isInView={props.isInView || props.isStepDone}>
       <Logo
-        position="top"
+        position='top'
         headline={logoCopy}
-        subline="Special Shape Forming Force Calculator"
+        subline='Special Shape Forming Force Calculator'
       />
-      <div className="arc-headline">Tensile Strength</div>
-      <div className="arc-container">
-        <Arc />
-      </div>
-      <Logo position="bottom" headline="Brand ltda." />
-      <ButtonWhite label="Next Step" icon={faArrowRight} />
+      <div className='arc-headline'>Tensile Strength</div>
+      <div className='arc-container'>{props.isInView && <Arc />}</div>
+      <Logo position='bottom' headline='Brand ltda.' />
+      <ButtonWhite
+        label='Next Step'
+        icon={faArrowRight}
+        onClick={() => props.onChange()}
+      />
     </SliderContainer>
   );
 };
