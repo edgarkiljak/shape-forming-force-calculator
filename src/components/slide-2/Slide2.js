@@ -41,6 +41,8 @@ const Slide2 = (props) => {
       amet
     </>
   );
+
+  // Cards
   const boxes = [
     { label: label1 },
     { label: label2 },

@@ -1,0 +1,49 @@
+$brand-colour: #e52922;
+
+.slide-5 {
+  background-color: $brand-colour;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s 0.25s ease;
+}
+
+.analysing-headline {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  color: white;
+  font-size: 30px;
+}
+
+.MuiLinearProgress-root {
+  height: 20px !important;
+  border-radius: 20px;
+}
+
+.MuiTypography-body2 {
+  font-size: 20px !important;
+  color: #ffffff !important;
+}
+
+.MuiLinearProgress-barColorPrimary {
+  background-color: grey !important;
+  opacity: 0.3;
+}
+
+.MuiLinearProgress-colorPrimary {
+  background-color: rgb(220, 220, 220) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .makeStyles-root-1 {
+    width: 55% !important;
+  }
+
+  .analysing-headline {
+    font-size: 20px;
+    text-align: left;
+    left: 10px;
+    top: 170px;
+  }
+}

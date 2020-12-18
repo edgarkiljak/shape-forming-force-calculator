@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Slide2 from './components/slide-2/Slide2';
 import Slide3 from './components/slide-3/Slide3';
 import Slide4 from './components/slide-4/Slide4';
+import Slide5 from './components/slide-5/Slide5';
+import Slide6 from './components/slide-6/Slide6';
 import './App.scss';
 const App = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,7 +33,9 @@ const App = () => {
         onChange={handleSlideTwoChange}
       />
       <Slide3 isInView={currentSlide === 1} />
-      <Slide4 isInView={currentSlide === 1} />
+      <Slide4 isInView={currentSlide === 2} />
+      <Slide5 isInView={currentSlide === 3} />
+      <Slide6 isInView={currentSlide === 4} />
     </div>
   );
 };
