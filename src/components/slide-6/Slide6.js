@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Slide6.scss';
 import Logo from '../logo/Logo';
 import '../buttons/Button.scss';
+import ForceContainer from './ForceContainer';
 import ButtonWhite from '../buttons/ButtonWhite';
 import { faSync } from '@fortawesome/free-solid-svg-icons';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
@@ -33,13 +34,16 @@ const Slide6 = () => {
 
   return (
     <div className="slide-6">
-      {' '}
       <Logo
         position="top"
         headline={logoCopy}
         subline="Special Shape Forming Force Calculator"
         xPos={8}
       />
+      <div className="force-container-wrapper">
+        <ForceContainer />
+      </div>
+      ;
       <Logo position="bottom" headline="Brand ltda." />
       <div className="buttons-container">
         <ButtonWhite label="Export" icon={faFilePdf} />

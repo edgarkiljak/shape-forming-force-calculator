@@ -1,26 +1,52 @@
 [
   {
     "Force": 9.8,
-    "Force Total": 104.8
+    "Force Total": 104.8,
+    "Description": "V-die (bottoming)",
+    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
   },
   {
     "Force": 16.3,
-    "Force Total": 174.7
+    "Force Total": 174.7,
+    "Description": "While",
+     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 249.5q0 0 100 0 15 0 15 20'/></svg>"
   },
   {
     "Force": 9.8,
-    "Force Total": 104.8
+    "Force Total": 104.8,
+    "Description": "Offset 'Z'",
+     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
   },
   {
     "Force": 19.5,
-    "Force Total": 209.6
+    "Force Total": 209.6,
+    "Description": "Material Thickness Offset",
+     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
   },
   {
     "Force": 14.6,
-    "Force Total": 157.2
+    "Force Total": 157.2,
+    "Description": "Channel 'U'",
+     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
   },
   {
     "Force": 13,
-    "Force Total": 139.8
+    "Force Total": 139.8,
+    "Description": "V-rib 'V'",
+     "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
   }
 ]
+
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1123" height="794"  stroke="#e52922" stroke-linecap="round" stroke-linejoin="round" fill="#fff" fill-rule="evenodd"><path fill="none" d="M399.5 349.5c75 10 35-50 95-45"/></svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1123" height="794"  stroke="# #e52922" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd"><path d="M399.5 269.5q0 0 55 0m-25 5q0 0 60 0"/></svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1123" height="794"  stroke="# #e52922" stroke-linecap="round" stroke-linejoin="round" fill="#fff" fill-rule="evenodd"><path fill="none" d="M399.5 249.5v50h60v-50"/></svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1123" height="794"  stroke="#e52922" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd"><path d="M369.5 249.5h7.5l22.5 25 20-25h5m0 0h2.5"/></svg>
+
