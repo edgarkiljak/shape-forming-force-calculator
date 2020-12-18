@@ -3,36 +3,36 @@
     "force": 9.8,
     "forceTotal": 104.8,
     "Description": "V-die (bottoming)",
-    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
+    "icon": "M399.5 199.5l100 100 100-100"
   },
   {
     "force": 16.3,
     "forceTotal": 174.7,
     "Description": "While",
-    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 249.5q0 0 100 0 15 0 15 20'/></svg>"
+    "icon": "M399.5 249.5q0 0 100 0 15 0 15 20"
   },
   {
     "force": 9.8,
     "forceTotal": 104.8,
     "Description": "Offset 'Z'",
-    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
+    "icon": "M399.5 349.5c75 10 35-50 95-45"
   },
   {
     "force": 19.5,
     "forceTotal": 209.6,
     "Description": "Material Thickness Offset",
-    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
+    "icon": "M399.5 269.5q0 0 55 0m-25 5q0 0 60 0"
   },
   {
     "force": 14.6,
     "forceTotal": 157.2,
     "Description": "Channel 'U'",
-    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
+    "icon": "M399.5 249.5v50h60v-50"
   },
   {
     "force": 13,
     "forceTotal": 139.8,
     "Description": "V-rib 'V'",
-    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='1123' height='794'  stroke='#e52922' stroke-linecap='round' stroke-linejoin='round' fill='#fff' fill-rule='evenodd'><path fill='none' d='M399.5 199.5l100 100 100-100'/></svg>"
+    "icon": "M369.5 249.5h7.5l22.5 25 20-25h5m0 0h2.5"
   }
 ]

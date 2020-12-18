@@ -3,6 +3,7 @@ import './Slide6.scss';
 
 const ForceContainer = (props) => {
   const {
+    svgClass,
     circleIcon,
     topPanelValue,
     bottomPannelValue,
@@ -12,7 +13,21 @@ const ForceContainer = (props) => {
     <div className="force-container">
       <div className="circle-container">
         <div className="inner-circle">
-          <div className="circle-icon">{circleIcon}</div>
+          <div className="circle-icon">
+            <svg
+              className={`svgClass-${props.svgClass}`}
+              xmlns="http://www.w3.org/2000/svg"
+              width="1123"
+              height="794"
+              stroke="#e52922"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="#fff"
+              fillRule="evenodd"
+            >
+              <path fill="none" d={circleIcon} />
+            </svg>
+          </div>
         </div>
       </div>
       <div className="panel-container">

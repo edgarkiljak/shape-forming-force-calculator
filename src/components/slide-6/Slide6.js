@@ -32,7 +32,11 @@ const Slide6 = () => {
     getData();
   }, []);
 
-  console.log(data);
+  console.log(data.icon);
+  // Mimics Export button functionality
+  const alertExported = () => {
+    alert('Exported!');
+  };
 
   return (
     data.length > 0 && (
@@ -47,7 +51,8 @@ const Slide6 = () => {
             return (
               <ForceContainer
                 key={index}
-                // circleIcon={el.icon}
+                svgClass={index}
+                circleIcon={el.icon}
                 topPanelValue={el.force}
                 bottomPannelValue={el.forceTotal}
                 panelDescription={el.Description}
@@ -57,7 +62,11 @@ const Slide6 = () => {
         </div>
         <Logo position="bottom" headline="Brand ltda." />
         <div className="buttons-container">
-          <ButtonWhite label="Export" icon={faFilePdf} />
+          <ButtonWhite
+            onClick={() => alertExported()}
+            label="Export"
+            icon={faFilePdf}
+          />
           <ButtonWhite label="Restart" icon={faSync} />
         </div>
       </div>

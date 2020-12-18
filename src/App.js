@@ -32,9 +32,9 @@ const App = () => {
         selectedBoxIndex={slideTwoState.selectedBox}
         onChange={handleSlideTwoChange}
       />
-      <Slide3 isInView={currentSlide === 1} />
-      <Slide4 isInView={currentSlide === 2} />
-      <Slide5 isInView={currentSlide === 3} />
+      <Slide3 onChange={handleSlideThreeChange} isInView={currentSlide === 1} />
+      <Slide4 onChange={handleSlideFourChange} isInView={currentSlide === 2} />
+      <Slide5 onChange={handleSlideFiveChange} isInView={currentSlide === 3} />
       <Slide6 isInView={currentSlide === 4} />
     </div>
   );
