@@ -204,3 +204,18 @@
     transform: scale(0.9);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .force-container-wrapper {
+    transform: translate(-31%, -60%);
+  }
+
+  .force-container {
+    width: 350px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: -28px 10px;
+    transform: scale(0.4);
+  }
+}
