@@ -169,6 +169,12 @@
   stroke-width: 10px !important;
 }
 
+@media screen and (min-width: 3000px) {
+  .force-container-wrapper {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 1222px) {
   .force-container-wrapper {
     transform: translate(-45%, -50%);
