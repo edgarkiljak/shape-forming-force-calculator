@@ -9,7 +9,7 @@ const SliderContainer = ({ children, isInView }) => {
         transform: `translateY(${isInView ? '0%' : '100%'})`,
       }}
     >
-      {children}
+      <div className='inner-container'>{children}</div>
     </div>
   );
 };
